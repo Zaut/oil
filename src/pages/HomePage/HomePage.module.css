@@ -1,0 +1,44 @@
+.page {
+  min-height: 100svh;
+  background: #fff;
+  color: #111827;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  box-sizing: border-box;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.section {
+  display: block;
+}
+
+.h1 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.p {
+  margin: 0;
+  color: rgba(17, 24, 39, 0.72);
+}
+
