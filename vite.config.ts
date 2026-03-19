@@ -3,8 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-   base: "/oil/",
-   
+  base: '/oil/',
   plugins: [
     react(),
     VitePWA({
@@ -19,15 +18,16 @@ export default defineConfig({
         theme_color: '#111111',
         background_color: '#111111',
         display: 'standalone',
-        start_url: '/',
+        start_url: '/oil/',
+        scope: '/oil/',
         icons: [
           {
-            src: '/pwa-192x192.png',
+            src: '/oil/pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '/pwa-512x512.png',
+            src: '/oil/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
