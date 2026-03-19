@@ -1,0 +1,160 @@
+.section {
+  width: 100%;
+  padding: 36px 24px;
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 1120px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrowBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(17, 24, 39, 0.2);
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.arrowBtn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.arrowLeft,
+.arrowRight {
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid rgba(17, 24, 39, 0.85);
+  border-bottom: 2px solid rgba(17, 24, 39, 0.85);
+}
+
+.arrowLeft {
+  transform: rotate(45deg);
+  margin-left: 2px;
+}
+
+.arrowRight {
+  transform: rotate(-135deg);
+  margin-right: 2px;
+}
+
+.scroller {
+  max-width: 1120px;
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  touch-action: pan-x;
+
+  /* Hide scrollbar (modern browsers) */
+  scrollbar-width: none;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.track {
+  display: flex;
+  gap: 24px;
+  padding: 0 6px 6px;
+}
+
+.item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+/* Desktop: show ~2 cards + partial next */
+.item {
+  width: 420px;
+}
+
+/* Demo placeholders (inside demo renderItem) */
+.demoCard {
+  height: 200px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.demoIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(170, 59, 255, 0.25), rgba(140, 198, 63, 0.2));
+}
+
+.demoLabel {
+  font-weight: 600;
+  color: rgba(17, 24, 39, 0.85);
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding-inline: 20px;
+  }
+
+  .item {
+    width: 340px;
+  }
+
+  .track {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-inline: 16px;
+    padding-top: 26px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .arrowBtn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .item {
+    width: 86vw;
+  }
+
+  .track {
+    gap: 16px;
+  }
+}
+

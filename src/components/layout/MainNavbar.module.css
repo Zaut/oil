@@ -1,0 +1,158 @@
+.navbar {
+  position: relative;
+  z-index: 10;
+  height: 72px;
+  background: #000;
+  color: #f9fafb;
+}
+
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.category {
+  border: none;
+  background: none;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  white-space: nowrap;
+}
+
+.category:hover {
+  opacity: 0.8;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.iconButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.iconButton:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 1.5px solid #f9fafb;
+  box-sizing: border-box;
+}
+
+.language {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: none;
+  color: inherit;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0;
+}
+
+.languageCode {
+  white-space: nowrap;
+}
+
+.languageArrow {
+  width: 8px;
+  height: 5px;
+  border-left: 1px solid #f9fafb;
+  border-right: 1px solid #f9fafb;
+  border-bottom: 1px solid #f9fafb;
+  border-top: none;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.logo {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  font-size: 20px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.logoPartLight {
+  color: #f9fafb;
+}
+
+.logoPartAccent {
+  color: #8cc63f;
+  margin: 0 4px;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    padding-inline: 16px;
+  }
+
+  .left {
+    gap: 16px;
+    font-size: 11px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    height: 64px;
+  }
+
+  .left {
+    gap: 12px;
+    font-size: 10px;
+  }
+
+  .right {
+    gap: 12px;
+  }
+
+  .iconButton {
+    width: 28px;
+    height: 28px;
+  }
+}
+

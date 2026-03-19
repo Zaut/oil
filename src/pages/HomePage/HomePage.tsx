@@ -1,9 +1,23 @@
 import styles from './HomePage.module.css'
+import { MainNavbar } from '../../components/layout/MainNavbar'
+import { NewsDemoCarouselSection } from '../../components/home/NewsDemoCarouselSection'
+import { AboutSection } from '../../components/home/AboutSection'
+import { FunctionsSection } from '../../components/home/FunctionsSection'
+import { WhyChooseSection } from '../../components/home/WhyChooseSection'
+import { HowToUseSection } from '../../components/home/HowToUseSection'
+
 
 export function HomePage() {
   return (
     <div className={styles.page}>
-      <main className={styles.container}>
+      <MainNavbar />
+      <AboutSection />
+      <FunctionsSection />
+      <WhyChooseSection />
+      <HowToUseSection />
+      <NewsDemoCarouselSection />
+
+      {/* <main className={styles.container}>
         <div className={styles.sections}>
           <section className={styles.section}>
             <h1 className={styles.h1}>Home</h1>
@@ -23,7 +37,7 @@ export function HomePage() {
             <p className={styles.p}>Контент будет здесь.</p>
           </section>
         </div>
-      </main>
+      </main> */}
     </div>
   )
 }

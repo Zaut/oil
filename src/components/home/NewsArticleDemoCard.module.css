@@ -1,0 +1,138 @@
+.card {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #0b0b0f;
+  color: #f9fafb;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 300px at 0% 0%, rgba(255, 255, 255, 0.14), transparent 42%),
+    linear-gradient(135deg, rgba(80, 170, 70, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.tags {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: rgba(147, 209, 58, 0.65);
+  color: #0b0b0f;
+}
+
+.gradientOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 55%;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.18) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.title {
+  position: absolute;
+  left: 24px;
+  right: 88px;
+  bottom: 24px;
+  z-index: 2;
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+}
+
+.actionBtn {
+  position: absolute;
+  right: 20px;
+  bottom: 26px;
+  z-index: 3;
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.actionIcon {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 2px solid rgba(11, 11, 15, 0.8);
+  position: relative;
+}
+
+.actionIcon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid rgba(11, 11, 15, 0.85);
+  border-right: 2px solid rgba(11, 11, 15, 0.85);
+  transform: translate(-35%, -50%) rotate(45deg);
+}
+
+@media (max-width: 900px) {
+  .card {
+    height: 200px;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .card {
+    height: 190px;
+  }
+
+  .tags {
+    top: 14px;
+    left: 16px;
+  }
+
+  .tag {
+    padding: 7px 12px;
+  }
+
+  .title {
+    left: 18px;
+    right: 84px;
+    bottom: 18px;
+    font-size: 16px;
+  }
+
+  .actionBtn {
+    right: 14px;
+    bottom: 18px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
