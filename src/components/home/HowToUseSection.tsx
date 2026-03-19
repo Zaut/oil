@@ -1,17 +1,27 @@
 import styles from './HowToUseSection.module.css'
 
+import phone1Icon from '../../assets/icons/phone1.svg'
+import phone2Icon from '../../assets/icons/phone2.svg'
+import phone3Icon from '../../assets/icons/phone3.svg'
+import phone4Icon from '../../assets/icons/phone4.svg'
+
+
 const STEPS = [
-  { description: 'Download the application',
-    icon: "../../../src/assets/icons/phone1.svg",
-   },
-  { description: 'Scan the bottle' ,
-    icon: "../../../src/assets/icons/phone2.svg",
+  {
+    description: 'Download the application',
+    icon: phone1Icon,
   },
-  { description: 'Get detailed information and advice',
-    icon: "../../../src/assets/icons/phone3.svg",
-   },
-  { description: 'Choose the best oil and enjoy',
-    icon: "../../../src/assets/icons/phone4.svg",
+  {
+    description: 'Scan the bottle',
+    icon: phone2Icon,
+  },
+  {
+    description: 'Get detailed information and advice',
+    icon: phone3Icon,
+  },
+  {
+    description: 'Choose the best oil and enjoy',
+    icon: phone4Icon,
   },
 ] as const
 

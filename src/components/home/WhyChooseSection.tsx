@@ -1,25 +1,30 @@
 import styles from './WhyChooseSection.module.css'
+import timeIcon from "../../assets/icons/time.svg"
+import assuranceIcon from "../../assets/icons/assurance.svg"
+import adviceIcon from "../../assets/icons/advice.svg"
+import expertIcon from "../../assets/icons/expert.svg"
+
 
 const BENEFITS = [
   {
     title: 'SAVE TIME',
     description: 'choose your oil in seconds',
-    icon: "../../../src/assets/icons/time.svg",
+    icon: timeIcon,
   },
   {
     title: 'QUALITY ASSURANCE',
     description: 'only verified data',
-    icon: "../../../src/assets/icons/assurance.svg",
+    icon: assuranceIcon,
   },
   {
     title: 'PERSONALIZED ADVICE',
     description: 'perfect for your goals',
-    icon: "../../../src/assets/icons/advice.svg",
+    icon: adviceIcon,
   },
   {
     title: 'ACCESS TO EXPERT KNOWLEDGE',
     description: 'sommeliers and nutritionists in your pocket',
-    icon: "../../../src/assets/icons/expert.svg",
+    icon: expertIcon,
   },
 ] as const
 
