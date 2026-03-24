@@ -1,0 +1,38 @@
+.button {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  min-height: 72px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.button:hover {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.arrow {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.light {
+  background: #ffffff;
+  color: #111111;
+}
+
+.purple {
+  background: #a8a8ff;
+  color: #ffffff;
+}

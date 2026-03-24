@@ -1,4 +1,7 @@
 import styles from './PromoNewsDemoCard.module.css'
+import { StoreButton } from '../ui/StoreButton'
+import playMarket from '../../assets/icons/play_market.svg'
+import appStore from '../../assets/icons/AppStore.svg'
 
 export function PromoNewsDemoCard() {
   return (
@@ -16,14 +19,22 @@ export function PromoNewsDemoCard() {
         </div>
 
         <div className={styles.storeRow}>
-          <div className={styles.storeBtn} role="button" tabIndex={0}>
-            <span className={styles.storeIcon} aria-hidden="true" />
-            Google Play
-          </div>
-          <div className={styles.storeBtn} role="button" tabIndex={0}>
-            <span className={styles.storeIcon} aria-hidden="true" />
-            App Store
-          </div>
+         
+            <StoreButton
+              icon={playMarket}
+              subtitle="Завантажити в"
+              title="Google Play"
+              size="small"
+            />
+         
+          
+            <StoreButton
+              icon={appStore}
+              subtitle="Завантажити в"
+              title="App Store"
+              size="small"
+            />
+          
         </div>
       </div>
     </article>

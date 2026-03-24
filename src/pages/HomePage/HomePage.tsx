@@ -1,10 +1,15 @@
 import styles from './HomePage.module.css'
 import { MainNavbar } from '../../components/layout/MainNavbar'
 import { NewsDemoCarouselSection } from '../../components/home/NewsDemoCarouselSection'
+import { CosmeticsCarouselSection } from '../../components/home/CosmeticsCarouselSection'
 import { AboutSection } from '../../components/home/AboutSection'
 import { FunctionsSection } from '../../components/home/FunctionsSection'
 import { WhyChooseSection } from '../../components/home/WhyChooseSection'
 import { HowToUseSection } from '../../components/home/HowToUseSection'
+import { OliveOilArticleSection } from '../../components/home/OliveOilArticleSection'
+import { Footer } from '../../components/layout/Footer'
+
+
 
 
 export function HomePage() {
@@ -16,6 +21,11 @@ export function HomePage() {
       <WhyChooseSection />
       <HowToUseSection />
       <NewsDemoCarouselSection />
+      <CosmeticsCarouselSection />
+      <OliveOilArticleSection />
+      <Footer />
+
+
 
       {/* <main className={styles.container}>
         <div className={styles.sections}>
