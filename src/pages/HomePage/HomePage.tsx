@@ -7,6 +7,7 @@ import { FunctionsSection } from '../../components/home/FunctionsSection'
 import { WhyChooseSection } from '../../components/home/WhyChooseSection'
 import { HowToUseSection } from '../../components/home/HowToUseSection'
 import { OliveOilArticleSection } from '../../components/home/OliveOilArticleSection'
+import { PopularProductsSection } from '../../components/home/PopularProductsSection'
 import { Footer } from '../../components/layout/Footer'
 
 
@@ -22,6 +23,7 @@ export function HomePage() {
       <HowToUseSection />
       <NewsDemoCarouselSection />
       <CosmeticsCarouselSection />
+      <PopularProductsSection />
       <OliveOilArticleSection />
       <Footer />
 

@@ -1,0 +1,24 @@
+.wrapper {
+   background: #ffffff;
+   padding: 12px 0 52px;
+
+
+   --carousel-title-color: #111111;
+   --carousel-title-size: clamp(26px, 3vw, 36px);
+   --carousel-title-transform: none;
+   --carousel-title-spacing: normal;
+   --carousel-title-weight: 700;
+
+
+   --carousel-arrow-border: rgba(0, 0, 0, 0.18);
+   --carousel-arrow-icon: #111111;
+
+   --carousel-item-width: 374px;
+   --carousel-item-tablet: 340px;
+   --carousel-item-mobile: 84vw;
+}
+
+
+.cardInCarousel {
+   padding: 0;
+}

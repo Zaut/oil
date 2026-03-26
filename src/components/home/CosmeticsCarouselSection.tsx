@@ -1,8 +1,9 @@
 import { CarouselSection } from '../ui/CarouselSection'
 import styles from './CosmeticsCarouselSection.module.css'
 import { ProductCarouselCard } from './ProductCarouselCard'
+import type { ProductCarouselCardProps } from './ProductCarouselCard'
 
-const demoProducts = [{}, {}, {}, {}] as const
+const demoProducts: ProductCarouselCardProps[] = [{}, {}, {}, {}]
 
 export function CosmeticsCarouselSection() {
   return (

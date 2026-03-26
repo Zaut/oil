@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  padding: 36px 24px;
+  padding: 0px 24px;
   box-sizing: border-box;
 }
 
@@ -8,7 +8,7 @@
   max-width: 1120px;
   margin: 0 auto 18px;
   display: flex;
-  color: #ffffff;
+  color: var(--carousel-title-color, #ffffff);
   align-items: center;
   justify-content: space-between;
   gap: 16px;
@@ -16,10 +16,10 @@
 
 .title {
   margin: 0;
-  font-size: 22px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-size: var(--carousel-title-size, 22px);
+  letter-spacing: var(--carousel-title-spacing, 0.08em);
+  text-transform: var(--carousel-title-transform, uppercase);
+  font-weight: var(--carousel-title-weight, 600);
 }
 
 .actions {
@@ -32,14 +32,13 @@
   width: 40px;
   height: 40px;
   border-radius: 999px;
-   border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid var(--carousel-arrow-border, rgba(255, 255, 255, 0.35));
   background: transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   padding: 0;
-  
 }
 
 .arrowBtn:disabled {
@@ -51,8 +50,8 @@
 .arrowRight {
   width: 10px;
   height: 10px;
-     border-left: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid var(--carousel-arrow-icon, #ffffff);
+  border-bottom: 2px solid var(--carousel-arrow-icon, #ffffff);
 }
 
 .arrowLeft {
@@ -72,8 +71,6 @@
   overflow-y: hidden;
   scroll-behavior: smooth;
   touch-action: pan-x;
-
-  /* Hide scrollbar (modern browsers) */
   scrollbar-width: none;
 }
 
@@ -92,12 +89,11 @@
   scroll-snap-align: start;
 }
 
-/* Desktop: show ~2 cards + partial next */
 .item {
-  width: 420px;
+  width: var(--carousel-item-width, 420px);
 }
 
-/* Demo placeholders (inside demo renderItem) */
+
 .demoCard {
   height: 200px;
   border-radius: 18px;
@@ -128,7 +124,7 @@
   }
 
   .item {
-    width: 340px;
+    width: var(--carousel-item-tablet, var(--carousel-item-width, 340px));
   }
 
   .track {
@@ -152,7 +148,7 @@
   }
 
   .item {
-    width: 86vw;
+    width: var(--carousel-item-mobile, var(--carousel-item-width, 86vw));
   }
 
   .track {
