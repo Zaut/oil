@@ -1,5 +1,16 @@
 .section {
-  background: #000000;
   padding: 18px 0 64px;
+
+     --carousel-title-color: #111111;
+   --carousel-title-size: clamp(26px, 3vw, 36px);
+   --carousel-title-transform: none;
+   --carousel-title-spacing: normal;
+   --carousel-title-weight: 700;
+
+
+   --carousel-arrow-border: rgba(0, 0, 0, 0.18);
+   --carousel-arrow-icon: #111111;
+
+ 
 }
 

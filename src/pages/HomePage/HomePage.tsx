@@ -9,6 +9,7 @@ import { HowToUseSection } from '../../components/home/HowToUseSection'
 import { OliveOilArticleSection } from '../../components/home/OliveOilArticleSection'
 import { PopularProductsSection } from '../../components/home/PopularProductsSection'
 import { Footer } from '../../components/layout/Footer'
+import { OliveHeroSection } from '../../components/home/OliveHeroSection'
 
 
 
@@ -17,6 +18,7 @@ export function HomePage() {
   return (
     <div className={styles.page}>
       <MainNavbar />
+      <OliveHeroSection/>
       <AboutSection />
       <FunctionsSection />
       <WhyChooseSection />
