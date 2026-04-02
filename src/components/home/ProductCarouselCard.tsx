@@ -65,11 +65,18 @@ export function ProductCarouselCard({
       </button>
 
       <div className={styles.content}>
-        <h3 className={styles.title}>{title}</h3>
-        <div className={styles.divider} aria-hidden="true" />
-        <p className={styles.description}>{description}</p>
+        <h3 className={styles.title}>
+          <span className={styles.titleWhite}>Thalia </span>
+          <span className={styles.titleOlive}>Olive Oil Skin</span>
+          <br />
+          <span className={styles.titleAccent}>Care Cream</span>
+        </h3>
+
+        <div className={styles.infoBlock}>
+          <div className={styles.divider} aria-hidden="true" />
+          <p className={styles.description}>{description}</p>
+        </div>
       </div>
     </article>
   )
 }
-
